@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Квартиры</title>
+
+    <!-- CSS стили -->
+    <link rel="stylesheet" href="css/libs/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/libs.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <header class="header">
+
+        <div class="bg-img bg-img-page">
+            <div class="overlay"></div>
+        </div>
+
+        <!-- Навигация -->
+        <nav id="nav" class="navbar">
+            <div class="container">
+                <div class="navbar-wrap">
+                    <!-- Кнопки -->
+                    <div class="buttons">
+                        <div class="contacts">
+                            <input type="button" class="contacts__link">
+                            <ul class="contacts-wrap">
+                                <!-- Телефон -->
+                                <li class="phone elem">
+                                    <span class="circle"></span>
+                                    <span class="phone-switch switch">
+                                        <img src="img/icon-phone.png" >
+                                    </span>
+                                    <div class="elem-number" >
+                                        <a href="#" class="link">097-535-77-88</a>
+                                        <a id="callBtn" href="#" class="text">Получить предложение</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Язык -->
+                        <div class="lang">
+                            <div class="elem">
+                                <span class="circle"></span>
+                                <span class="lang-switch switch">
+                                    <span>RU</span>
+                                </span>
+                                <div class="elem-number lang-elem" >
+                                    <a href="/en" class="link">EN</a>
+                                    <a href="/ua" class="link">UA</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    <!-- Логотип -->
+                    <div class="brand">
+                        <a href="index.html">
+                            <img class="logo" src="img/logo.png" alt="logo">
+                            <img class="logo-mini" src="img/logo-mini.png" alt="logo">
+                        </a>
+                    </div>
+                    <!-- /Логотип -->
+                    <!-- Свертывания навигации -->
+                    <div class="navbar-collapse">
+                        <!-- <span class="one"></span> -->
+                        <span></span>
+                        <!-- <span class="three"></span> -->
+                    </div>
+                    <!-- /Свертывания навигации -->
+
+                    <!-- <div class="navbar-nav"> -->
+                    <ul class="main-nav">
+                        <li class="active"><a href="#">Про комплекс</a></li>
+                        <li><a href="#">Квартири</a></li>
+                        <li><a href="#">Планування</a></li>
+                        <li><a href="#">Акційні пропозиціЇ</a></li>
+                        <li><a href="#">Хід будівництва</a></li>
+                        <li><a href="#">Контакти</a></li>
+                    </ul>
+                    <!-- </div> -->
+                    <!-- /.navbar-nav -->
+                </div>
+            </div>
+        </nav>
+        <!-- /Навигация -->
+        
+        <div class="header-wrap">
+            <div class="container">
+                <div class="header-row">
+                    <div class="social">
+                        <ul>
+                            <li class="wow bounceInRight" data-wow-duration="1.5s" data-wow-delay="1s"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li class="wow bounceInRight" data-wow-duration="1.5s" data-wow-delay="1.3s"><a href="#"><i class="fa fa-youtube"></i></a></li>
+                            <li class="wow bounceInRight" data-wow-duration="1.5s" data-wow-delay="1.6s"><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+    <!-- /Шапка -->
+    <main class="flats">
+        <div class="content">
+            <div class="container">   
+                <form id="eFiltr" class="eFiltr eFiltr_form" data-aos="zoom-out-up" action="/spisok-kvartir/" method="get">
+                    <div class="filter">
+                        <div class="filter__title">Житловий комплекс комфорт-класу</div>
+                        <div class="filter__range">
+                            <span class="filter__txt">Загальна площа</span>
+                            
+                        <div id="filter__range" data-min="34" data-max="85" data-min-value="" data-max-value=""></div>
+    
+                        <input type="hidden" name="f[6][min]" id="filter-range-min-value" value="">
+                        <input type="hidden" name="f[6][max]" id="filter-range-max-value" value="">
+                                
+    
+                            
+                            <div class="num">
+                                <label for="amount"></label>
+                                
+    
+                                
+                                <input type="text"  id="filter-range-min" readonly>
+                                <label for="amount"></label>
+                                <input type="text"  id="filter-range-max" readonly>
+                            </div>
+                        </div>
+                        <div class="filter__radio apart-quantity js-filter-group">
+                            <span class="filter__txt">Кількість кімнат</span>
+                            <div class="labels">
+                <label for="num-24_1">
+                    <input type="radio" id="num-24_1" name="f[24][]" value="1"    >
+                    <span>1</span>
+                </label>
+    
+                <label for="num-24_2">
+                    <input type="radio" id="num-24_2" name="f[24][]" value="2"    >
+                    <span>2</span>
+                </label>
+    
+                <label for="num-24_3">
+                    <input type="radio" id="num-24_3" name="f[24][]" value="3"    >
+                    <span>3</span>
+                </label>
+                </div>
+                            <a href="" class="filter__link-all js-filter-all">Усі</a>
+                        </div>
+                        <div class="filter__radio js-payment-percent-wrap">
+                            <span class="filter__txt">Перший внесок:</span>
+                            <div class="labels">
+                                <label for="fee-30">
+                                    <input type="radio" name="fee" value="30" id="fee-30"  >
+                                    <span>30%</span>
+                                </label>
+                                <label for="fee-50">
+                                    <input type="radio" name="fee" value="50" id="fee-50"  >
+                                    <span>50%</span>
+                                </label>
+                                <label for="fee-70">
+                                    <input type="radio" name="fee" value="70" id="fee-70"  >
+                                    <span>70%</span>
+                                </label>
+                            </div>
+                            <a href="" class="filter__link-all" data-value="100">100% </a>
+                        </div>
+                    </div>
+                </form>       
+                <div id="eFiltr_results_wrapper" class="apartments-wrapper">
+                    <div class="eFiltr_loader"></div>
+                    <div id="eFiltr_results" class="apartments-list">
+                        <div class="apartment">
+                            <div class="apartment-wrap">
+                                <a href="/tipy-kvartir/3-a/">
+                                    <img class="apartment__img" src="assets/cache/images/assets/snippets/phpthumb/noimage-313x340-22b.png" alt="3-к квартира 3-А">
+                                </a>
+                                <a href="/tipy-kvartir/3-a/"><h4 class="apartment__title">3-к квартира 3-А</h4></a>
+                                <div class="apartment__area">
+                                    <span class="common">загальна площа: 84.8</span>
+                                    <span class="residential">житлова площа: 47.0</span>
+                                </div>
+                                
+    
+    
+                                <div class="apartment__payment monthly-payment">
+                                    <p>Загальна вартість:<br>від<span class="amount">1 060 000 грн</span></p>
+                                </div>
+                            </div>
+                            <a data-fancybox data-type="ajax" data-src="/render-flay-type-modal?doc=23" href="javascript:;" class="apartment__btn btn">Замовити</a>
+                        </div>
+                        <div class="apartment">
+                            <div class="apartment-wrap">
+                                <a href="/tipy-kvartir/2-d/">
+                                    <img class="apartment__img" src="assets/cache/images/assets/snippets/phpthumb/noimage-313x340-22b.png" alt="2-к квартира 2-Д">
+                                </a>
+                                <a href="/tipy-kvartir/2-d/"><h4 class="apartment__title">2-к квартира 2-Д</h4></a>
+                                <div class="apartment__area">
+                                    <span class="common">загальна площа: 56.6</span>
+                                    <span class="residential">житлова площа: 34.5</span>
+                                </div>
+                                
+    
+    
+                                <div class="apartment__payment monthly-payment">
+                                    <p>Загальна вартість:<br>від<span class="amount">679 200 грн</span></p>
+                                </div>
+                            </div>
+                            <a data-fancybox data-type="ajax" data-src="/render-flay-type-modal?doc=21" href="javascript:;" class="apartment__btn btn">Замовити</a>
+                        </div>
+                        <div class="apartment">
+                            <div class="apartment-wrap">
+                                <a href="/tipy-kvartir/2-g/">
+                                    <img class="apartment__img" src="assets/cache/images/assets/snippets/phpthumb/noimage-313x340-22b.png" alt="2-к квартира 2-Г">
+                                </a>
+                                <a href="/tipy-kvartir/2-g/"><h4 class="apartment__title">2-к квартира 2-Г</h4></a>
+                                <div class="apartment__area">
+                                    <span class="common">загальна площа: 57.5</span>
+                                    <span class="residential">житлова площа: 39.3</span>
+                                </div>
+                                
+    
+    
+                                <div class="apartment__payment monthly-payment">
+                                    <p>Загальна вартість:<br>від<span class="amount">690 000 грн</span></p>
+                                </div>
+                            </div>
+                            <a data-fancybox data-type="ajax" data-src="/render-flay-type-modal?doc=20" href="javascript:;" class="apartment__btn btn">Замовити</a>
+                        </div>
+                        <div class="apartment">
+                            <div class="apartment-wrap">
+                                <a href="/tipy-kvartir/1-k/">
+                                    <img class="apartment__img" src="assets/cache/images/assets/snippets/phpthumb/noimage-313x340-22b.png" alt="1-к квартира 1-К">
+                                </a>
+                                <a href="/tipy-kvartir/1-k/"><h4 class="apartment__title">1-к квартира 1-К</h4></a>
+                                <div class="apartment__area">
+                                    <span class="common">загальна площа: 34.5</span>
+                                    <span class="residential">житлова площа: 16.5</span>
+                                </div>
+                                
+    
+    
+                                <div class="apartment__payment monthly-payment">
+                                    <p>Загальна вартість:<br>від<span class="amount">465 750 грн</span></p>
+                                </div>
+                            </div>
+                            <a data-fancybox data-type="ajax" data-src="/render-flay-type-modal?doc=18" href="javascript:;" class="apartment__btn btn">Замовити</a>
+                        </div>
+                        <div class="apartment">
+                            <div class="apartment-wrap">
+                                <a href="/tipy-kvartir/1-i/">
+                                    <img class="apartment__img" src="assets/cache/images/assets/snippets/phpthumb/noimage-313x340-22b.png" alt="1-к квартира 1-І">
+                                </a>
+                                <a href="/tipy-kvartir/1-i/"><h4 class="apartment__title">1-к квартира 1-І</h4></a>
+                                <div class="apartment__area">
+                                    <span class="common">загальна площа: 42.5</span>
+                                    <span class="residential">житлова площа: 21.3</span>
+                                </div>
+                                
+    
+    
+                                <div class="apartment__payment monthly-payment">
+                                    <p>Загальна вартість:<br>від<span class="amount">510 000 грн</span></p>
+                                </div>
+                            </div>
+                            <a data-fancybox data-type="ajax" data-src="/render-flay-type-modal?doc=17" href="javascript:;" class="apartment__btn btn">Замовити</a>
+                        </div>
+                        <div class="apartment">
+                            <div class="apartment-wrap">
+                                <a href="/tipy-kvartir/1-z/">
+                                    <img class="apartment__img" src="assets/cache/images/assets/snippets/phpthumb/noimage-313x340-22b.png" alt="1-к квартира 1-З">
+                                </a>
+                                <a href="/tipy-kvartir/1-z/"><h4 class="apartment__title">1-к квартира 1-З</h4></a>
+                                <div class="apartment__area">
+                                    <span class="common">загальна площа: 38.4</span>
+                                    <span class="residential">житлова площа: 17.9</span>
+                                </div>
+                                
+    
+    
+                                <div class="apartment__payment monthly-payment">
+                                    <p>Загальна вартість:<br>від<span class="amount">470 400 грн</span></p>
+                                </div>
+                            </div>
+                            <a data-fancybox data-type="ajax" data-src="/render-flay-type-modal?doc=16" href="javascript:;" class="apartment__btn btn">Замовити</a>
+                        </div>
+                        <div class="apartment">
+                            <div class="apartment-wrap">
+                                <a href="/tipy-kvartir/1-zh/">
+                                    <img class="apartment__img" src="assets/cache/images/assets/snippets/phpthumb/noimage-313x340-22b.png" alt="1-к квартира 1-Ж">
+                                </a>
+                                <a href="/tipy-kvartir/1-zh/"><h4 class="apartment__title">1-к квартира 1-Ж</h4></a>
+                                <div class="apartment__area">
+                                    <span class="common">загальна площа: 40.6</span>
+                                    <span class="residential">житлова площа: 18.2</span>
+                                </div>
+                                
+    
+    
+                                <div class="apartment__payment monthly-payment">
+                                    <p>Загальна вартість:<br>від<span class="amount">477 050 грн</span></p>
+                                </div>
+                            </div>
+                            <a data-fancybox data-type="ajax" data-src="/render-flay-type-modal?doc=15" href="javascript:;" class="apartment__btn btn">Замовити</a>
+                        </div>
+                        <div class="apartment">
+                            <div class="apartment-wrap">
+                                <a href="/tipy-kvartir/1-e/">
+                                    <img class="apartment__img" src="assets/cache/images/assets/snippets/phpthumb/noimage-313x340-22b.png" alt="1-к квартира 1-Е">
+                                </a>
+                                <a href="/tipy-kvartir/1-e/"><h4 class="apartment__title">1-к квартира 1-Е</h4></a>
+                                <div class="apartment__area">
+                                    <span class="common">загальна площа: 36.2</span>
+                                    <span class="residential">житлова площа: 15.5</span>
+                                </div>
+                                
+    
+    
+                                <div class="apartment__payment monthly-payment">
+                                    <p>Загальна вартість:<br>від<span class="amount">470 600 грн</span></p>
+                                </div>
+                            </div>
+                            <a data-fancybox data-type="ajax" data-src="/render-flay-type-modal?doc=14" href="javascript:;" class="apartment__btn btn">Замовити</a>
+                        </div>
+                        <div class="apartment">
+                            <div class="apartment-wrap">
+                                <a href="/tipy-kvartir/2-v/">
+                                    <img class="apartment__img" src="assets/cache/images/assets/snippets/phpthumb/noimage-313x340-22b.png" alt="2-к квартира 2-В">
+                                </a>
+                                <a href="/tipy-kvartir/2-v/"><h4 class="apartment__title">2-к квартира 2-В</h4></a>
+                                <div class="apartment__area">
+                                    <span class="common">загальна площа: 51.6</span>
+                                    <span class="residential">житлова площа: 22.3</span>
+                                </div>
+                                
+    
+    
+                                <div class="apartment__payment monthly-payment">
+                                    <p>Загальна вартість:<br>від<span class="amount">696 600 грн</span></p>
+                                </div>
+                            </div>
+                            <a data-fancybox data-type="ajax" data-src="/render-flay-type-modal?doc=13" href="javascript:;" class="apartment__btn btn">Замовити</a>
+                        </div>
+                        <div class="apartment">
+                            <div class="apartment-wrap">
+                                <a href="/tipy-kvartir/2-b/">
+                                    <img class="apartment__img" src="assets/cache/images/assets/snippets/phpthumb/noimage-313x340-22b.png" alt="2-к квартира 2-Б">
+                                </a>
+                                <a href="/tipy-kvartir/2-b/"><h4 class="apartment__title">2-к квартира 2-Б</h4></a>
+                                <div class="apartment__area">
+                                    <span class="common">загальна площа: 56.1</span>
+                                    <span class="residential">житлова площа: 26.8</span>
+                                </div>
+                                
+    
+    
+                                <div class="apartment__payment monthly-payment">
+                                    <p>Загальна вартість:<br>від<span class="amount">771 375 грн</span></p>
+                                </div>
+                            </div>
+                            <a data-fancybox data-type="ajax" data-src="/render-flay-type-modal?doc=12" href="javascript:;" class="apartment__btn btn">Замовити</a>
+                        </div>
+                        <div class="apartment">
+                            <div class="apartment-wrap">
+                                <a href="/tipy-kvartir/2-a/">
+                                    <img class="apartment__img" src="assets/cache/images/assets/snippets/phpthumb/noimage-313x340-22b.png" alt="2-к квартира 2-А">
+                                </a>
+                                <a href="/tipy-kvartir/2-a/"><h4 class="apartment__title">2-к квартира 2-А</h4></a>
+                                <div class="apartment__area">
+                                    <span class="common">загальна площа: 69.7</span>
+                                    <span class="residential">житлова площа: 40.4</span>
+                                </div>
+                                
+    
+    
+                                <div class="apartment__payment monthly-payment">
+                                    <p>Загальна вартість:<br>від<span class="amount">836 400 грн</span></p>
+                                </div>
+                            </div>
+                            <a data-fancybox data-type="ajax" data-src="/render-flay-type-modal?doc=11" href="javascript:;" class="apartment__btn btn">Замовити</a>
+                        </div>
+                        <div class="apartment">
+                            <div class="apartment-wrap">
+                                <a href="/tipy-kvartir/1-d/">
+                                    <img class="apartment__img" src="assets/cache/images/assets/snippets/phpthumb/noimage-313x340-22b.png" alt="1-к квартира 1-Д">
+                                </a>
+                                <a href="/tipy-kvartir/1-d/"><h4 class="apartment__title">1-к квартира 1-Д</h4></a>
+                                <div class="apartment__area">
+                                    <span class="common">загальна площа: 46.6</span>
+                                    <span class="residential">житлова площа: 25.1</span>
+                                </div>
+                                
+    
+    
+                                <div class="apartment__payment monthly-payment">
+                                    <p>Загальна вартість:<br>від<span class="amount">605 800 грн</span></p>
+                                </div>
+                            </div>
+                            <a data-fancybox data-type="ajax" data-src="/render-flay-type-modal?doc=9" href="javascript:;" class="apartment__btn btn">Замовити</a>
+                        </div>
+                        <div class="apartment">
+                            <div class="apartment-wrap">
+                                <a href="/tipy-kvartir/1-g/">
+                                    <img class="apartment__img" src="assets/cache/images/assets/snippets/phpthumb/noimage-313x340-22b.png" alt="1-к квартира 1-Г">
+                                </a>
+                                <a href="/tipy-kvartir/1-g/"><h4 class="apartment__title">1-к квартира 1-Г</h4></a>
+                                <div class="apartment__area">
+                                    <span class="common">загальна площа: 39.5</span>
+                                    <span class="residential">житлова площа: 16.0</span>
+                                </div>
+                                
+    
+    
+                                <div class="apartment__payment monthly-payment">
+                                    <p>Загальна вартість:<br>від<span class="amount">533 250 грн</span></p>
+                                </div>
+                            </div>
+                            <a data-fancybox data-type="ajax" data-src="/render-flay-type-modal?doc=8" href="javascript:;" class="apartment__btn btn">Замовити</a>
+                        </div>
+                        <div class="apartment">
+                            <div class="apartment-wrap">
+                                <a href="/tipy-kvartir/1-b/">
+                                    <img class="apartment__img" src="assets/cache/images/flattypes/34_2-313x340-d98.png" alt="1-к квартира 1-Б">
+                                </a>
+                                <a href="/tipy-kvartir/1-b/"><h4 class="apartment__title">1-к квартира 1-Б</h4></a>
+                                <div class="apartment__area">
+                                    <span class="common">загальна площа: 39.6</span>
+                                    <span class="residential">житлова площа: 18.2</span>
+                                </div>
+                                
+    
+    
+                                <div class="apartment__payment monthly-payment">
+                                    <p>Загальна вартість:<br>від<span class="amount">495 000 грн</span></p>
+                                </div>
+                            </div>
+                            <a data-fancybox data-type="ajax" data-src="/render-flay-type-modal?doc=6" href="javascript:;" class="apartment__btn btn">Замовити</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="map">
+            <div class="map-wrap">
+                 <div class="map-google">
+    
+        <div id="main-map" class="google-map" data-center="50.513354,30.242063" data-zoom="13"></div>
+    
+         <ul class="map-points-list" data-aos="zoom-out-left"><li class="map-points__item js-main-map-point" data-coords="50.521268,30.232042">
+            <img src="assets/images/maps-icons/map-icon-1.png">
+             <span>Житловий комплекс ІБІС</span>
+         </li><li class="map-points__item js-main-map-point" data-coords="50.527536, 30.271189">
+            <img src="assets/images/maps-icons/map-icon-5.png">
+             <span>Загальноосвітня школа</span>
+         </li><li class="map-points__item js-main-map-point" data-coords="50.524344, 30.262091">
+            <img src="assets/images/maps-icons/map-icon-3.png">
+             <span>Центральна площа Ірпеня</span>
+         </li><li class="map-points__item js-main-map-point" data-coords="50.524344, 30.232091">
+            <img src="assets/images/maps-icons/map-icon-4.png">
+             <span>Центральна площа Ірпеня 2</span>
+         </li></ul>
+    
+    </div>
+                <div class="map-info">
+        <div class="container">
+            <div class="map-info-wrap">
+                <ul class="map-important-points-list" data-aos="zoom-out-left"><li class="map-important-points__item">
+                    <img src="assets/images/maps-icons/info/map-icon-14.png">
+                    <div class="map-important__info">
+                        <p>1,8 км</p>
+                        <span>Загальноосвітня школа</span>
+                    </div>
+                </li><li class="map-important-points__item">
+                    <img src="assets/images/maps-icons/info/map-icon-15.png">
+                    <div class="map-important__info">
+                        <p>500 м</p>
+                        <span>СПА, відпочинок</span>
+                    </div>
+                </li><li class="map-important-points__item">
+                    <img src="assets/images/maps-icons/info/map-icon-16.png">
+                    <div class="map-important__info">
+                        <p>2,3 км</p>
+                        <span>Медична амбулаторія</span>
+                    </div>
+                </li><li class="map-important-points__item">
+                    <img src="assets/images/maps-icons/info/map-icon-17.png">
+                    <div class="map-important__info">
+                        <p>1,8 км</p>
+                        <span>Державний дошкільний заклад</span>
+                    </div>
+                </li><li class="map-important-points__item">
+                    <img src="assets/images/maps-icons/info/map-icon-18.png">
+                    <div class="map-important__info">
+                        <p>1,4 км</p>
+                        <span>Супермаркет</span>
+                    </div>
+                </li><li class="map-important-points__item">
+                    <img src="assets/images/maps-icons/info/map-icon-19.png">
+                    <div class="map-important__info">
+                        <p>1,4 км</p>
+                        <span>Фітнес-центр</span>
+                    </div>
+                </li></ul>
+    
+            </div>
+        </div>
+    </div>
+            </div>
+        </section>
+    </main>
+    <!-- Презагрузка -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <!-- /Презагрузка -->
+    <!-- The Modal -->
+    <div style="display: none;" id="hidden-content">
+        <div class="container">
+            <div class="modal-content">
+                <div class="apart-content">
+                    <div class="form-flex">
+                        <div class="apart-content__img">
+                            <img src="img/34_2.png" alt="">
+                            <a href="#" class="apart-content__link">План поверху</a>
+                        </div>
+                        <div class="apart-content__text">
+                            <div class="apart-content__title">1-к квартира 1-E</div>
+                            <ul class="apart-content__desc">
+                                <li>загальна площа: 36,2</li>
+                                <li>житлова площа: 15,5</li>
+                                <li>Кімната - 18,2 м2</li>
+                                <li>Кухня - 14,1 м2</li>
+                                <li>Санвузол - 3,8 м2</li>
+                                <li>Хол - 3,5 м2</li>
+                                <li>Доступна: будинки 1-4</li>
+                            </ul>
+                            <div class="apart-content__form">
+                                <form class="ajax-form" data-url="ajaxFrom-orderFlatType">
+                                    <input type="hidden" name="formid" value="orderFlatType">
+                                    <input type="hidden" name="flatTypeId" value="13">
+                                
+                                    
+                                
+                                    <input type="text" name="name" value="" placeholder="Ваше Ім’я">
+                                    <input type="tel" name="phone" value="" placeholder="+38 099 000 00 00">
+                                    <input type="submit" value="Зателефонуйте мені">
+                                </form>
+                            </div>
+                            <div class="contribution">
+                                <div class="contribution__text">
+                                    <span>КУПУЙ ЗРУЧНО</span>
+                                    <p>перший внесок від:</p>
+                                </div>
+                                <div class="contribution__num">
+                                    <label for="r-1">
+                                        <input type="radio" name="ex1" id="r-1">
+                                        <span class="bg"></span>
+                                        <span class="txt">30%</span>
+                                    </label>
+                                    <label for="r-2">
+                                        <input type="radio" name="ex1" id="r-2">
+                                        <span class="bg"></span>
+                                        <span class="txt">50%</span>
+                                    </label>
+                                    <label for="r-3">
+                                        <input type="radio" name="ex1" id="r-3">
+                                        <span class="bg"></span>
+                                        <span class="txt">70%</span>
+                                    </label>
+                                    <label for="r-4">
+                                        <input type="radio" name="ex1" id="r-4">
+                                        <span class="bg"></span>
+                                        <span class="txt">100%</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="apart-content-table">
+                        <div class="apart-content-table__title">Схожі планування:</div>
+                        <div class="apart-table">
+                            <div class="table-row table-header">
+                                <div class="table-col">Поверх</div>
+                                <div class="table-col">Квартира</div>
+                                <div class="table-col">Тип кв-ри</div>
+                                <div class="table-col">Площа, м2</div>
+                                <div class="table-col">Перший внесок</div>
+                                <div class="table-col">Ціна за м2, грн</div>
+                                <div class="table-col">Щомісячний платіж</div>
+                                <div class="table-col">Повна вартість</div>
+                                <div class="table-col">Статус</div>
+                            </div>
+                            <div class="table-row">
+                                <div class="table-col">1</div>
+                                <div class="table-col">8</div>
+                                <div class="table-col">1-к</div>
+                                <div class="table-col">41,7</div>
+                                <div class="table-col">250 000 грн</div>
+                                <div class="table-col">12 500 грн</div>
+                                <div class="table-col">13 888</div>
+                                <div class="table-col">750 000 грн</div>
+                                <div class="table-col">В наявності</div>
+                            </div>
+                            <div class="table-row">
+                                <div class="table-col">3</div>
+                                <div class="table-col">2</div>
+                                <div class="table-col">2-к</div>
+                                <div class="table-col">41,7</div>
+                                <div class="table-col">250 000 грн</div>
+                                <div class="table-col">12 500 грн</div>
+                                <div class="table-col">13 888</div>
+                                <div class="table-col">750 000 грн</div>
+                                <div class="table-col">Продано</div>
+                            </div>
+                            <div class="table-row">
+                                <div class="table-col">2</div>
+                                <div class="table-col">8</div>
+                                <div class="table-col">2-к</div>
+                                <div class="table-col">41,7</div>
+                                <div class="table-col">250 000 грн</div>
+                                <div class="table-col">12 500 грн</div>
+                                <div class="table-col">13 888</div>
+                                <div class="table-col">750 000 грн</div>
+                                <div class="table-col">Продано</div>
+                            </div>
+                            <div class="table-row">
+                                <div class="table-col">1</div>
+                                <div class="table-col">2</div>
+                                <div class="table-col">2-к</div>
+                                <div class="table-col">41,7</div>
+                                <div class="table-col">250 000 грн</div>
+                                <div class="table-col">12 500 грн</div>
+                                <div class="table-col">13 888</div>
+                                <div class="table-col">750 000 грн</div>
+                                <div class="table-col">Продано</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Заказать звонок Модалбное окно -->
+    <div id="callModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="call-modal">
+                <span>Замовити дзвінок</span>
+                <form>
+                    <input type="text" placeholder="Iм'я">
+                    <input type="tel" placeholder="Ваш телефон">
+                    <input type="submit" value="Замовити">
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- /Заказать звонок Модалбное окно -->
+    <!-- jQuery библиотеки -->
+    <script src="js/libs.min.js"></script>
+    <script src="js/libs_pack/jquery-ui.js"></script>
+    <script src="js/libs_pack/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        new WOW().init();
+    </script>
+    <script>
+        $( function() {
+            $( "#filter__range" ).slider({
+            range: true,
+            min: 0,
+            max: 500,
+            values: [ 75, 300 ],
+            slide: function( event, ui ) {
+                $( "#filter-range-min" ).val( ui.values[ 0 ] + " кв.м" );
+                $( "#filter-range-max" ).val( ui.values[ 1 ] + " кв.м");
+            }
+            });
+            $( "#filter-range-min" ).val( $( "#filter__range" ).slider( "values", 0 ) + " кв.м");
+            $( "#filter-range-max" ).val( $( "#filter__range" ).slider( "values", 1 ) + " кв.м");
+        } );
+    </script>
+    
+</body>
+</html>

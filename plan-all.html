@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>План поверху</title>
+
+    <!-- CSS стили -->
+    <link rel="stylesheet" href="css/libs.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <!-- Шапка -->
+    <header class="header">
+        
+        <div class="bg-img bg-img-page">
+            <div class="overlay"></div>
+        </div>
+
+        <!-- Навигация -->
+        <nav id="nav" class="navbar">
+            <div class="container">
+                <div class="navbar-wrap">
+                    <!-- Кнопки -->
+                    <div class="buttons">
+                        <div class="contacts">
+                            <input type="button" class="contacts__link">
+                            <ul class="contacts-wrap">
+                                <!-- Телефон -->
+                                <li class="phone elem">
+                                    <span class="circle"></span>
+                                    <span class="phone-switch switch">
+                                        <img src="img/icon-phone.png" >
+                                    </span>
+                                    <div class="elem-number" >
+                                        <a href="#" class="link">097-535-77-88</a>
+                                        <a id="callBtn" href="#" class="text">Получить предложение</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Язык -->
+                        <div class="lang">
+                            <div class="elem">
+                                <span class="circle"></span>
+                                <span class="lang-switch switch">
+                                    <span>RU</span>
+                                </span>
+                                <div class="elem-number lang-elem">
+                                    <a href="/en" class="link">EN</a>
+                                    <a href="/ua" class="link">UA</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    <!-- Логотип -->
+                    <div class="brand">
+                        <a href="index.html">
+                            <img class="logo" src="img/logo.png" alt="logo">
+                            <img class="logo-mini" src="img/logo-mini.png" alt="logo">
+                        </a>
+                    </div>
+                    <!-- /Логотип -->
+                    <!-- Свертывания навигации -->
+                    <div class="navbar-collapse">
+                        <!-- <span class="one"></span> -->
+                        <span></span>
+                        <!-- <span class="three"></span> -->
+                    </div>
+                    <!-- /Свертывания навигации -->
+
+                    <!-- <div class="navbar-nav"> -->
+                    <ul class="main-nav">
+                        <li class="active"><a href="#">Про комплекс</a></li>
+                        <li><a href="#">Квартири</a></li>
+                        <li><a href="#">Планування</a></li>
+                        <li><a href="#">Акційні пропозиціЇ</a></li>
+                        <li><a href="#">Хід будівництва</a></li>
+                        <li><a href="#">Контакти</a></li>
+                    </ul>
+                    <!-- </div> -->
+                    <!-- /.navbar-nav -->
+                </div>
+            </div>
+        </nav>
+        <!-- /Навигация -->
+        
+        <div class="header-wrap">
+            <div class="container">
+                <div class="header-row">
+                    <div class="social">
+                        <ul>
+                            <li class="wow bounceInRight" data-wow-duration="1.5s" data-wow-delay="1s"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li class="wow bounceInRight" data-wow-duration="1.5s" data-wow-delay="1.3s"><a href="#"><i class="fa fa-youtube"></i></a></li>
+                            <li class="wow bounceInRight" data-wow-duration="1.5s" data-wow-delay="1.6s"><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+    <!-- /Шапка -->
+    <main class="plan">
+        <div class="content">
+            <div class="container">
+                <div class="filter" data-aos="zoom-out-up">
+                    <div class="filter__title">Житловий комплекс комфорт-класу</div>
+                    
+                    <form class="filter-plan">
+                        <div class="filter__radio filter-num-house js-filter-group">
+                            <span class="filter__txt">Номер будинку</span>
+                            <div class="labels">
+                <label for="num-30_1">
+                    <input type="radio" id="num-30_1" name="f[30][]" value="1"    >
+                    <span>#1</span>
+                </label>
+    
+                <label for="num-30_2">
+                    <input type="radio" id="num-30_2" name="f[30][]" value="2"    >
+                    <span>#2</span>
+                </label>
+    
+                <label for="num-30_3">
+                    <input type="radio" id="num-30_3" name="f[30][]" value="3"    >
+                    <span>#3</span>
+                </label>
+    
+                <label for="num-30_4">
+                    <input type="radio" id="num-30_4" name="f[30][]" value="4"    >
+                    <span>#4</span>
+                </label>
+    
+                <label for="num-30_5">
+                    <input type="radio" id="num-30_5" name="f[30][]" value="5"    >
+                    <span>#5</span>
+                </label>
+    
+                <label for="num-30_6">
+                    <input type="radio" id="num-30_6" name="f[30][]" value="6"    >
+                    <span>#6</span>
+                </label>
+                </div>
+                            <a href="" class="filter__link-all js-filter-all">Усі</a>
+                        </div>
+                        <div class="filter__select">
+                            <span class="filter__txt">Адреса:</span>
+                            <div class="select">
+                                <select name="f[31][]" id="adrress">
+                                <option value="">Виберіть адрес</option>
+                                <option value="ul.-patriotov-7"    >Патріотів, 7</option><option value="patriotov-8"    >Патріотів, 8</option><option value="patriotov-11"    >Патріотів, 11</option><option value="patriotov-13"    >Патріотів, 13</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="filter__radio js-filter-group">
+                            <span class="filter__txt">Поверх</span>
+                            <div class="labels">
+                <label for="num-29_1">
+                    <input type="radio" id="num-29_1" name="f[29][]" value="1"    >
+                    <span>1</span>
+                </label>
+    
+                <label for="num-29_2">
+                    <input type="radio" id="num-29_2" name="f[29][]" value="2"    >
+                    <span>2</span>
+                </label>
+    
+                <label for="num-29_3">
+                    <input type="radio" id="num-29_3" name="f[29][]" value="3"    >
+                    <span>3</span>
+                </label>
+                </div>
+                            <a href="" class="filter__link-all js-filter-all">Усі</a>
+                        </div>
+                    </form>
+                </div>
+                <div class="plans" id="eFiltr_results_wrapper">
+                    <div class="eFiltr_loader"></div>
+                    <div class="plans-list" id="eFiltr_results">
+                        <div class="plan-item">
+                            <ul class="plan-item__text">
+                                <li>Поверх: 1</li>
+                                <li>Будинок: #1</li>
+                                <li>Адреса: </li>
+                                <li>Срок здачі: 01-08-2020</li>
+                            </ul>
+                            <div class="plan-item__floor">
+                                <div class="plan-item__img">
+                                    <img src="assets/cache/images/floors/plan-1-579x492-373.png" alt="1 этаж">
+                                </div>
+                            </div>
+                            <div class="plan-item__table">
+                                <div style="overflow: auto;">
+                                    <div class="table-row table-header">
+                                        <div class="table-col">Тип</div>
+                                        <div class="table-col">Кімнати</div>
+                                        <div class="table-col">Площа, м2</div>
+                                        <div class="table-col">Ціна за м2, грн</div>
+                                        <div class="table-col">Загальна вартість</div>
+                                        <div class="table-col">Статус</div>
+                                    </div>
+                                    <div class="table-row sales">
+                                        <div class="table-col">2-А</div>
+                                        <div class="table-col">2-к</div>
+                                        <div class="table-col">69.7</div>
+                                        <div class="table-col">11 500&nbsp;грн</div>
+                                        <div class="table-col">801 550&nbsp;грн</div>
+                                        <div class="table-col">Продано</div>
+                                    </div>
+                                    <div class="table-row sales">
+                                        <div class="table-col">1-А</div>
+                                        <div class="table-col">1-к</div>
+                                        <div class="table-col">35.3</div>
+                                        <div class="table-col">11 500&nbsp;грн</div>
+                                        <div class="table-col">405 950&nbsp;грн</div>
+                                        <div class="table-col">Продано</div>
+                                    </div>
+                                    <a class="table-row in-stock" href="#">
+                                        <div class="table-col">1-Б</div>
+                                        <div class="table-col">1-к</div>
+                                        <div class="table-col">39.6</div>
+                                        <div class="table-col">14 000&nbsp;грн</div>
+                                        <div class="table-col">554 400&nbsp;грн</div>
+                                        <div class="table-col">В наявності</div>
+                                    </a>
+                                    <div class="table-row sales">
+                                        <div class="table-col">1-В</div>
+                                        <div class="table-col">1-к</div>
+                                        <div class="table-col">34.2</div>
+                                        <div class="table-col">11 500&nbsp;грн</div>
+                                        <div class="table-col">393 300&nbsp;грн</div>
+                                        <div class="table-col">Продано</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="plan-item">
+                            <ul class="plan-item__text">
+                                <li>Поверх: 1</li>
+                                <li>Будинок: #1</li>
+                                <li>Адреса: </li>
+                                <li>Срок здачі: 01-08-2020</li>
+                            </ul>
+                            <div class="plan-item__floor">
+                                <div class="plan-item__img">
+                                    <img src="assets/cache/images/floors/plan-1-579x492-373.png" alt="1 этаж">
+                                </div>
+                            </div>
+                            <div class="plan-item__table">
+                                <div style="overflow: auto;">
+                                    <div class="table-row table-header">
+                                        <div class="table-col">Тип</div>
+                                        <div class="table-col">Кімнати</div>
+                                        <div class="table-col">Площа, м2</div>
+                                        <div class="table-col">Ціна за м2, грн</div>
+                                        <div class="table-col">Загальна вартість</div>
+                                        <div class="table-col">Статус</div>
+                                    </div>
+                                    <div class="table-row sales">
+                                        <div class="table-col">2-А</div>
+                                        <div class="table-col">2-к</div>
+                                        <div class="table-col">69.7</div>
+                                        <div class="table-col">11 500&nbsp;грн</div>
+                                        <div class="table-col">801 550&nbsp;грн</div>
+                                        <div class="table-col">Продано</div>
+                                    </div>
+                                    <div class="table-row sales">
+                                        <div class="table-col">1-А</div>
+                                        <div class="table-col">1-к</div>
+                                        <div class="table-col">35.3</div>
+                                        <div class="table-col">11 500&nbsp;грн</div>
+                                        <div class="table-col">405 950&nbsp;грн</div>
+                                        <div class="table-col">Продано</div>
+                                    </div>
+                                    <a class="table-row in-stock" href="#">
+                                        <div class="table-col">1-Б</div>
+                                        <div class="table-col">1-к</div>
+                                        <div class="table-col">39.6</div>
+                                        <div class="table-col">14 000&nbsp;грн</div>
+                                        <div class="table-col">554 400&nbsp;грн</div>
+                                        <div class="table-col">В наявності</div>
+                                    </a>
+                                    <div class="table-row sales">
+                                        <div class="table-col">1-В</div>
+                                        <div class="table-col">1-к</div>
+                                        <div class="table-col">34.2</div>
+                                        <div class="table-col">11 500&nbsp;грн</div>
+                                        <div class="table-col">393 300&nbsp;грн</div>
+                                        <div class="table-col">Продано</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="plan-item">
+                            <ul class="plan-item__text">
+                                <li>Поверх: 1</li>
+                                <li>Будинок: #1</li>
+                                <li>Адреса: </li>
+                                <li>Срок здачі: 01-08-2020</li>
+                            </ul>
+                            <div class="plan-item__floor">
+                                <div class="plan-item__img">
+                                    <img src="assets/cache/images/floors/plan-1-579x492-373.png" alt="1 этаж">
+                                </div>
+                            </div>
+                            <div class="plan-item__table">
+                                <div style="overflow: auto;">
+                                    <div class="table-row table-header">
+                                        <div class="table-col">Тип</div>
+                                        <div class="table-col">Кімнати</div>
+                                        <div class="table-col">Площа, м2</div>
+                                        <div class="table-col">Ціна за м2, грн</div>
+                                        <div class="table-col">Загальна вартість</div>
+                                        <div class="table-col">Статус</div>
+                                    </div>
+                                    <div class="table-row sales">
+                                        <div class="table-col">2-А</div>
+                                        <div class="table-col">2-к</div>
+                                        <div class="table-col">69.7</div>
+                                        <div class="table-col">11 500&nbsp;грн</div>
+                                        <div class="table-col">801 550&nbsp;грн</div>
+                                        <div class="table-col">Продано</div>
+                                    </div>
+                                    <div class="table-row sales">
+                                        <div class="table-col">1-А</div>
+                                        <div class="table-col">1-к</div>
+                                        <div class="table-col">35.3</div>
+                                        <div class="table-col">11 500&nbsp;грн</div>
+                                        <div class="table-col">405 950&nbsp;грн</div>
+                                        <div class="table-col">Продано</div>
+                                    </div>
+                                    <a class="table-row in-stock" href="#">
+                                        <div class="table-col">1-Б</div>
+                                        <div class="table-col">1-к</div>
+                                        <div class="table-col">39.6</div>
+                                        <div class="table-col">14 000&nbsp;грн</div>
+                                        <div class="table-col">554 400&nbsp;грн</div>
+                                        <div class="table-col">В наявності</div>
+                                    </a>
+                                    <div class="table-row sales">
+                                        <div class="table-col">1-В</div>
+                                        <div class="table-col">1-к</div>
+                                        <div class="table-col">34.2</div>
+                                        <div class="table-col">11 500&nbsp;грн</div>
+                                        <div class="table-col">393 300&nbsp;грн</div>
+                                        <div class="table-col">Продано</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <section class="map">
+            <div class="map-wrap">
+                <div class="map-google">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d24177.628618050177!2d30.213083804366406!3d50.43439191334732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1586171279989!5m2!1sru!2sua" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    <ul class="map-points-list" data-aos="zoom-out-left">
+                        <li class="map-points__item"><img src="img/map/map-icon-1.png"><span>Житловий комплекс ІБІС</span></li>
+                        <li class="map-points__item"><img src="img/map/map-icon-2.png"><span>Мережевий супермаркет</span></li>
+                        <li class="map-points__item"><img src="img/map/map-icon-3.png"><span>Державний медичний заклад</span></li>
+                        <li class="map-points__item"><img src="img/map/map-icon-4.png"><span>Загальноосвітня школа</span></li>
+                        <li class="map-points__item"><img src="img/map/map-icon-5.png"><span>Державний дошкільний заклад</span></li>
+                        <li class="map-points__item"><img src="img/map/map-icon-6.png"><span>Залізничний вокзал</span></li>
+                        <li class="map-points__item"><img src="img/map/map-icon-7.png"><span>Центральна площа Ірпеня</span></li>
+                        <li class="map-points__item"><img src="img/map/map-icon-8.png"><span>Міський парк</span></li>
+                        <li class="map-points__item"><img src="img/map/map-icon-9.png"><span>Кінотеатр</span></li>
+                        <li class="map-points__item"><img src="img/map/map-icon-10.png"><span>Парк “Набережна Ірпеня” - понад 3,5 км зони відпочинку</span></li>
+                        <li class="map-points__item"><img src="img/map/map-icon-11.png"><span>Автобусна зупинка</span></li>
+                        <li class="map-points__item"><img src="img/map/map-icon-12.png"><span>Національний парк “Голосіївський” </span></li>
+                        <li class="map-points__item"><img src="img/map/map-icon-13.png"><span>Дорога, передбачена у генеральному плані м. Ірпінь</span></li>
+                    </ul>
+                
+                </div>
+                <div class="map-info">
+                    <div class="container">
+                        <div class="map-info-wrap">
+                            <ul class="map-important-points-list">
+                                <li class="map-important-points__item">
+                                    <img src="img/map/map-icon-14.png">
+                                    <div class="map-important__info">
+                                        <p>1,8 км</p>
+                                        <span>Загальноосвітня школа </span>
+                                    </div>
+                                </li>
+                                <li class="map-important-points__item">
+                                    <img src="img/map/map-icon-15.png">
+                                    <div class="map-important__info">
+                                        <p>500 м</p>
+                                        <span>СПА, відпочинок</span>
+                                    </div>
+                                </li>
+                                <li class="map-important-points__item">
+                                    <img src="img/map/map-icon-16.png">
+                                    <div class="map-important__info">
+                                        <p>2,3 км</p>
+                                        <span>Медична амбулаторія</span>
+                                    </div>
+                                </li>
+                                <li class="map-important-points__item">
+                                    <img src="img/map/map-icon-17.png">
+                                    <div class="map-important__info">
+                                        <p>1,8 км</p>
+                                        <span>Державний дошкільний заклад</span>
+                                    </div>
+                                </li>
+                                <li class="map-important-points__item">
+                                    <img src="img/map/map-icon-18.png">
+                                    <div class="map-important__info">
+                                        <p>1,4 км</p>
+                                        <span>Супермаркет</span>
+                                    </div>
+                                </li>
+                                <li class="map-important-points__item">
+                                    <img src="img/map/map-icon-19.png">
+                                    <div class="map-important__info">
+                                        <p>1,4 км</p>
+                                        <span>Фітнес-центр</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Презагрузка -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <!-- /Презагрузка -->
+    <!-- Модалбное окно -->
+    <div id="callModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="call-modal">
+                <span>Замовити дзвінок</span>
+                <form>
+                    <input type="text" placeholder="Iм'я">
+                    <input type="tel" placeholder="Ваш телефон">
+                    <input type="submit" value="Замовити">
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- /Модалбное окно -->
+    <!-- jQuery библиотеки -->
+    <script src="js/libs.min.js"></script>
+    <script src="js/libs_pack/jquery-ui.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+        new WOW().init();
+    </script>
+    <script>
+        $( function() {
+            $( "#adrress" ).selectmenu();
+        });
+    </script>
+    
+</body>
+</html>

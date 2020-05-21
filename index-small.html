@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ibis</title>
+
+    <!-- CSS стили -->
+    <link rel="stylesheet" href="css/libs.css">
+    <link rel="stylesheet" href="css/libs/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index-small.css">
+    
+</head>
+<body>
+    <!-- Шапка -->
+    <header class="header">
+
+        <div class="bg-img">
+            <div class="overlay"></div>
+        </div>
+
+        <!-- Навигация -->
+        <nav id="nav" class="navbar">
+            <div class="container">
+                <div class="navbar-wrap">
+                    <!-- Кнопки -->
+                    <div class="buttons">
+                        <div class="contacts">
+                            <input type="button" class="contacts__link">
+                            <ul class="contacts-wrap">
+                                <!-- Телефон -->
+                                <li class="phone elem">
+                                    <span class="circle"></span>
+                                    <span class="phone-switch switch">
+                                        <!-- <img src="img/icon-phone.png" > -->
+                                        <i class="fa fa-phone"></i>
+                                    </span>
+                                    <div class="elem-number" >
+                                        <a href="#" class="link">097-535-77-88</a>
+                                        <a id="callBtn" href="#" class="text">Получить предложение</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Язык -->
+                        <div class="lang">
+                            <div class="elem">
+                                <span class="circle"></span>
+                                <span class="lang-switch switch">
+                                    <span>RU</span>
+                                </span>
+                                <div class="elem-number lang-elem" >
+                                    <a href="/en" class="link">EN</a>
+                                    <a href="/ua" class="link">UA</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    <!-- Логотип -->
+                    <div class="brand">
+                        <a href="index.html">
+                            <img class="logo" src="img/logo.png" alt="logo">
+                            <img class="logo-mini" src="img/logo-mini.png" alt="logo">
+                        </a>
+                    </div>
+                    <!-- /Логотип -->
+                    <!-- Свертывания навигации -->
+                    <div class="navbar-collapse">
+                        <!-- <span class="one"></span> -->
+                        <span></span>
+                        <!-- <span class="three"></span> -->
+                    </div>
+                    <!-- /Свертывания навигации -->
+
+                    <!-- <div class="navbar-nav"> -->
+                    <ul class="main-nav">
+                        <li class="active"><a href="#">Про комплекс</a></li>
+                        <li><a href="#">Квартири</a></li>
+                        <li><a href="#">Планування</a></li>
+                        <li><a href="#">Акційні пропозиціЇ</a></li>
+                        <li><a href="#">Хід будівництва</a></li>
+                        <li><a href="#">Контакти</a></li>
+                    </ul>
+                    <!-- </div> -->
+                    <!-- /.navbar-nav -->
+                </div>
+            </div>
+        </nav>
+        <!-- /Навигация -->
+        
+        <div class="header-wrap">
+            <div class="container">
+                <div class="header-row">
+                    <div class="header-content">
+                        <h1 class="header__title wow bounceInDown" data-wow-duration="1.5s" data-wow-delay=".4s">ВІДЧУТТЯ СПРАВЖНЬОГО ПЕРЕДМІСТЯ</h1>
+                        <p class="header__text wow bounceInDown" data-wow-duration="1.5s" data-wow-delay=".5s">житловий комплекс в курортному районі Ірпеня</p>
+                        <a class="btn-home header__btn wow bounceInDown" data-wow-duration="1.5s" data-wow-delay=".6s">Обрати квартиру</a>
+                        <a href="#info" class="scroll wow bounceInDown" data-wow-duration="1.5s" data-wow-delay="1s">
+                            <img src="img/scroll-btn.png" alt="" srcset="">
+                            <i class="scroll-arrow"></i>
+                        </a>
+                    </div>
+                    <div class="social">
+                        <ul>
+                            <li class="wow bounceInRight" data-wow-duration="1.5s" data-wow-delay="1s"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li class="wow bounceInRight" data-wow-duration="1.5s" data-wow-delay="1.3s"><a href="#"><i class="fa fa-youtube"></i></a></li>
+                            <li class="wow bounceInRight" data-wow-duration="1.5s" data-wow-delay="1.6s"><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+    <!-- /Шапка -->
+    <main>
+        <section id="info" class="info">
+            <div class="container">
+                <div class="info-wrap">
+                    <div class="info-img" data-aos="fade-right"><img src="img/img-1.jpg" alt="ЖИТЛОВИЙ КОМПЛЕКС"></div>
+                    <div class="info-content">
+                        <h2 class="section-title info__title" data-aos="fade-left">ЖИТЛОВИЙ КОМПЛЕКС Комфорт-КЛАСУ</h2>
+                        <div class="section-text info__text" data-aos="fade-left">
+                            <p>Територія житлового комплексу “Ібіс” знаходиться під цілодобовою охороною,
+                                тому що безпека наших мешканців для нас на першому місці. “Ібіс” - це 12 будинків загальною кількістю 511 квартир
+                                буде збудовано за 3 роки. Додатково до кожної квартири передбачено індивідуальні технічні приміщення 3-6 м2. Посекційне
+                                введення в експлуатацію надає можливість заселення вже через 1 рік. Прогнозована інвестиційна вигода становить 35-40%.</p>
+                        </div>
+                        
+                        <div class="info-links" data-aos="fade-left">
+                            <a href="#" class="btn-home info__btn btn-main">Докладніше</a>
+                            <a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="info__play-video" >
+                                <span><img src="img/icon-play.png" alt="Воспроизвести"></span>
+                                <span>Видео презентация</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /.info -->
+        <section class="advantage">
+            <div class="container">
+                <div class="advantage-wrap">
+                    <div class="advantage-content">
+                        <h2 class="section-title advantage__title" data-aos="fade-up" data-aos-duration="1000">ПЕРЕВАГИ НАШОГО КОМПЛЕКСУ</h2>
+                        <ul class="advantage-list">
+                            <li class="advantage-list__item" data-aos="fade-right" data-aos-duration="1000">
+                                <img src="img/advantage-1.png" width="47" alt="Респектабельний мікрорайон">
+                                <span>Респектабельний мікрорайон</span>
+                            </li>
+                            <li class="advantage-list__item" data-aos="fade-right" data-aos-duration="1000">
+                                <img src="img/advantage-2.png" width="52" alt="Закрита територія під охороною">
+                                <span>Закрита територія під охороною</span>
+                            </li>
+                            <li class="advantage-list__item" data-aos="fade-right" data-aos-duration="1000">
+                                <img src="img/advantage-3.png" width="48" alt="3 поверхи максимальна висота">
+                                <span>3 поверхи максимальна висота</span>
+                            </li>
+                            <li class="advantage-list__item" data-aos="fade-right" data-aos-duration="1000">
+                                <img src="img/advantage-4.png" width="45" alt="Архітектура в сучасному стилі">
+                                <span>Архітектура в сучасному стилі</span>
+                            </li>
+                            <li class="advantage-list__item" data-aos="fade-right" data-aos-duration="1000">
+                                <img src="img/advantage-5.png" width="46" alt="Кладова у подарунок">
+                                <span>Кладова у подарунок</span>
+                            </li>
+                            <li class="advantage-list__item" data-aos="fade-right" data-aos-duration="1000">
+                                <img src="img/advantage-6.png" width="50" alt="Власне паркомісце">
+                                <span>Власне паркомісце</span>
+                            </li>
+                        </ul>
+                        <a data-fancybox data-src="#hidden-presentation" href="javascript:;" class="btn-home btn-main wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0s">Замовити презендацію</a>
+                    </div>
+                    <div class="advantage-img" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine"><img src="img/img-2.png" alt=""></div>
+                </div>
+            </div>
+        </section>
+        <!-- /.advantage -->
+        <section id="works" class="works">
+            <div class="container">
+                <div class="works-wrap">
+                    <div class="works-list">
+                        <div class="works-list__item">
+                            <h3 class="counter" data-aos="flip-left">
+                                <span id="s1" class="counter-span"></span>га
+                            </h3>
+                            <p>Площа комплексу</p>
+                        </div>
+                        <div class="works-list__item">
+                            <h3 class="counter" data-aos="flip-left">
+                                <span id="s2"></span>
+                            </h3>
+                            <p>будинків</p>
+                        </div>
+                        <div class="works-list__item">
+                            <h3 class="counter" data-aos="flip-left">
+                                <span id="s3" class="counter-span"></span></h3>
+                            <p>квартир</p>
+                        </div>
+                        <div class="works-list__item">
+                            <h3 class="counter" data-aos="flip-left">
+                                <span id="s4" class="counter-span"></span>
+                            </h3>
+                            <p>паркомісць</p>
+                        </div>
+                        <div class="works-list__item">
+                            <h3 class="counter" data-aos="flip-left">
+                                <span id="s5" class="counter-span"></span>м2
+                            </h3>
+                            <p>комерції</p>
+                        </div>
+                        <div class="works-list__item">
+                            <h3 class="counter" data-aos="flip-left">
+                                <span id="s6" class="counter-span"></span>м2
+                            </h3>
+                            <p>зон відпочинку</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /.works -->
+        <section class="slider">
+            <div class="slider-list">
+                <div class="slide-item"><img src="img/slide-1.jpg" alt="ЖК Ібіс"></div>
+                <div class="slide-item"><img src="img/slide-2.jpg" alt="ЖК Ібіс"></div>
+                <div class="slide-item"><img src="img/slide-3.jpg" alt="ЖК Ібіс"></div>
+                <div class="slide-item"><img src="img/slide-1.jpg" alt="ЖК Ібіс"></div>
+                <div class="slide-item"><img src="img/slide-2.jpg" alt="ЖК Ібіс"></div>
+                <div class="slide-item"><img src="img/slide-3.jpg" alt="ЖК Ібіс"></div>
+            </div>
+        </section>
+        <section class="documents">
+            <div class="container">
+                <div class="documents-wrap">
+                    <div class="documents-col">
+                        <h2 class="section-title documents__title wow bounceInUp" data-wow-duration="1.5s" data-wow-delay=".0s">ДОКУМЕНТИ В ПОВНОМУ ПОРЯДКУ</h2>
+                        <div class="section-text documents__text wow bounceInUp" data-wow-duration="1.5s" data-wow-delay=".3s">
+                            <p>Забудовником отримані всі необхідні дозволи на будівництво, дотримані всі будівельні норми і правила.</p>
+                        </div>
+                    </div>
+                    <div class="documents-col">
+                        <div class="documents-list">
+                            <a href="#" class="documents-list__item wow bounceInRight" data-wow-duration="1.5s" data-wow-delay=".0s">
+                                <div class="img"><img src="img/icon-document.png" alt=""></div>
+                                <div class="text">
+                                    <span class="date">17.09.2019</span>
+                                    <p>Дозвіл на виконання будівельних робіт, 7я чергу</p>
+                                </div>
+                            </a>
+                            <a href="#" class="documents-list__item wow bounceInRight" data-wow-duration="1.5s" data-wow-delay=".2s">
+                                <div class="img"><img src="img/icon-document.png" alt=""></div>
+                                <div class="text">
+                                    <span class="date">27.06.2018</span>
+                                    <p>Витяг з Державного реєстру прав на нерухоме майно ділянки 185</p>
+                                </div>
+                            </a>
+                            <a href="#" class="documents-list__item wow bounceInRight" data-wow-duration="1.5s" data-wow-delay=".4s">
+                                <div class="img"><img src="img/icon-document.png" alt=""></div>
+                                <div class="text">
+                                    <span class="date">21.06.2016</span>
+                                    <p>Ліцензія на господарську діяльність з будівництва об'єктів IV і V категорії складності</p>
+                                </div>
+                            </a>
+                            <a href="#" class="documents-list__item wow bounceInRight" data-wow-duration="1.5s" data-wow-delay=".6s">
+                                <div class="img"><img src="img/icon-document.png" alt=""></div>
+                                <div class="text">
+                                    <span class="date">08.10.2019</span>
+                                    <p>Витяг з Державного реєстру прав на нерухоме майно ділянки 186</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /.documents -->
+        <section id="location" class="location">
+            <div class="location-wrap">
+                <div class="bg-location">
+                    <picture>
+                        <source media="(min-width: 1024px)" srcset="img/bg-location.jpg">
+                        <img src="img/bg-location-mini.jpg">
+                    </picture>
+                </div>
+                <div class="location-block">
+                    <!-- <span class="location-expand">Развернуть<i class="fa fa-arrow-right" aria-hidden="true"></i></span> -->
+                    <ul class="location-list">
+                        <li class="location-list__point"><img src="img/location/loc-icon-1.png"><span>пост охорони 24/7</span></li>
+                        <li class="location-list__point"><img src="img/location/loc-icon-2.png"><span>центр розвитку дитини</span></li>
+                        <li class="location-list__point"><img src="img/location/loc-icon-3.png"><span>спорт-хаб</span></li>
+                        <li class="location-list__point"><img src="img/location/loc-icon-4.png"><span>роледром</span></li>
+                        <li class="location-list__point"><img src="img/location/loc-icon-5.png"><span>зона релакс-відпочинку</span></li>
+                        <li class="location-list__point"><img src="img/location/loc-icon-6.png"><span>вуличні тренування</span></li>
+                        <li class="location-list__point"><img src="img/location/loc-icon-7.png"><span>велобокси</span></li>
+                        <li class="location-list__point"><img src="img/location/loc-icon-8.png"><span>ігровий майданчик</span></li>
+                        <li class="location-list__point"><img src="img/location/loc-icon-9.png"><span>зона творчості</span></li>
+                        <li class="location-list__point"><img src="img/location/loc-icon-10.png"><span>комерційні приміщення</span></li>
+                        <li class="location-list__point"><img src="img/location/loc-icon-11.png"><span>бювет</span></li>
+                        <li class="location-list__point"><img src="img/location/loc-icon-12.png"><span>дитячий майданчик</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- /.location -->
+        <section class="apartments">
+            <div class="container">
+                <div class="apartments-wrap">
+                    <div class="apartments-header">
+                        <div class="apartments-text">
+                            <h2 class="section-title apartments__title wow bounceInUp" data-wow-duration="1.5s" data-wow-delay=".0s">КУПУЙ ЗРУЧНО</h2>
+                            <p class="section-text apartments__text wow bounceInUp" data-wow-duration="1.5s" data-wow-delay=".3s">перший внесок від:</p>
+                        </div>
+                    </div>
+                    <div>          
+                        <div class="apartments-extra">
+                            <input type="radio" name="apartradio" id="apart30">
+                            <label class="apartments-extra__block" for="apart30">
+                                <span class="percent"><b id="a1">30</b>%</span>
+                            </label>
+
+                            <input type="radio" name="apartradio" id="apart50">
+                            <label class="apartments-extra__block" for="apart50">
+                                <span class="percent"><b id="a2">50</b>%</span>
+                            </label>
+
+                            <input type="radio" name="apartradio" id="apart70">
+                            <label class="apartments-extra__block" for="apart70">
+                                <span class="percent"><b id="a3">70</b>%</span>
+                            </label>
+
+                            <input type="radio" name="apartradio" id="apart100">
+                            <label class="apartments-extra__block" for="apart100">
+                                <span class="percent"><b id="a4">100</b>%</span>
+                            </label>
+                        </div>
+                
+                        <div>                                                        
+                            <div class="apartments-slider owl-catalog owl-carousel owl-theme">
+                                <div class="apartment">
+                                    <div class="apartment-wrap">
+                                        <a href="#"><img class="apartment__img" src="img/apartment-1.png" alt="1-к квартира 1-E"></a>
+                                        <a href="#"><h4 class="apartment__title">1-к квартира 1-E</h4></a>
+                                        <div class="apartment__area">
+                                            <span class="common">загальна площа: 36,2</span>
+                                            <span class="residential">житлова площа: 15,5</span>
+                                        </div>
+                                        <div class="apartment__payment first-payment">
+                                            <p>Сума першого внеску:<br>від<span class="amount">250 000 грн</span></p>
+                                        </div>
+                                        <div class="apartment__payment monthly-payment">
+                                            <p>Щомісячний платіж:<br>від<span class="amount">13 888 грн</span></p>
+                                        </div>
+                                        <div class="apartment__payment monthly-payment">
+                                            <p>Загальна вартість:<br>від<span class="amount">850 000 грн</span></p>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn apartment__btn">Детальніше</a>
+                                </div>
+                                <div class="apartment">
+                                    <div class="apartment-wrap">
+                                        <a href="#"><img class="apartment__img" src="img/apartment-1.png" alt="1-к квартира 1-E"></a>
+                                        <a href="#"><h4 class="apartment__title">1-к квартира 1-E</h4></a>
+                                        <div class="apartment__area">
+                                            <span class="common">загальна площа: 36,2</span>
+                                            <span class="residential">житлова площа: 15,5</span>
+                                        </div>
+                                        <div class="apartment__payment first-payment">
+                                            <p>Сума першого внеску:<br>від<span class="amount">250 000 грн</span></p>
+                                        </div>
+                                        <div class="apartment__payment monthly-payment">
+                                            <p>Щомісячний платіж:<br>від<span class="amount">13 888 грн</span></p>
+                                        </div>
+                                        <div class="apartment__payment monthly-payment">
+                                            <p>Загальна вартість:<br>від<span class="amount">850 000 грн</span></p>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn apartment__btn">Детальніше</a>
+                                </div>
+                                <div class="apartment">
+                                    <div class="apartment-wrap">
+                                        <a href="#"><img class="apartment__img" src="img/apartment-1.png" alt="1-к квартира 1-E"></a>
+                                        <a href="#"><h4 class="apartment__title">1-к квартира 1-E</h4></a>
+                                        <div class="apartment__area">
+                                            <span class="common">загальна площа: 36,2</span>
+                                            <span class="residential">житлова площа: 15,5</span>
+                                        </div>
+                                        <div class="apartment__payment first-payment">
+                                            <p>Сума першого внеску:<br>від<span class="amount">250 000 грн</span></p>
+                                        </div>
+                                        <div class="apartment__payment monthly-payment">
+                                            <p>Щомісячний платіж:<br>від<span class="amount">13 888 грн</span></p>
+                                        </div>
+                                        <div class="apartment__payment monthly-payment">
+                                            <p>Загальна вартість:<br>від<span class="amount">850 000 грн</span></p>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn apartment__btn">Детальніше</a>
+                                </div>
+                                <div class="apartment">
+                                    <div class="apartment-wrap">
+                                        <a href="#"><img class="apartment__img" src="img/apartment-1.png" alt="1-к квартира 1-E"></a>
+                                        <a href="#"><h4 class="apartment__title">1-к квартира 1-E</h4></a>
+                                        <div class="apartment__area">
+                                            <span class="common">загальна площа: 36,2</span>
+                                            <span class="residential">житлова площа: 15,5</span>
+                                        </div>
+                                        <div class="apartment__payment first-payment">
+                                            <p>Сума першого внеску:<br>від<span class="amount">250 000 грн</span></p>
+                                        </div>
+                                        <div class="apartment__payment monthly-payment">
+                                            <p>Щомісячний платіж:<br>від<span class="amount">13 888 грн</span></p>
+                                        </div>
+                                        <div class="apartment__payment monthly-payment">
+                                            <p>Загальна вартість:<br>від<span class="amount">850 000 грн</span></p>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn apartment__btn">Детальніше</a>
+                                </div>
+                                <div class="apartment">
+                                    <div class="apartment-wrap">
+                                        <a href="#"><img class="apartment__img" src="img/apartment-1.png" alt="1-к квартира 1-E"></a>
+                                        <a href="#"><h4 class="apartment__title">1-к квартира 1-E</h4></a>
+                                        <div class="apartment__area">
+                                            <span class="common">загальна площа: 36,2</span>
+                                            <span class="residential">житлова площа: 15,5</span>
+                                        </div>
+                                        <div class="apartment__payment first-payment">
+                                            <p>Сума першого внеску:<br>від<span class="amount">250 000 грн</span></p>
+                                        </div>
+                                        <div class="apartment__payment monthly-payment">
+                                            <p>Щомісячний платіж:<br>від<span class="amount">13 888 грн</span></p>
+                                        </div>
+                                        <div class="apartment__payment monthly-payment">
+                                            <p>Загальна вартість:<br>від<span class="amount">850 000 грн</span></p>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn apartment__btn">Детальніше</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /.apartments -->
+        <section class="progress">
+            <div class="container">
+                <div class="progress-wrap">
+                    <div class="progress-content progress-col">
+                        <h2 class="section-title progress__title wow bounceInUp" data-wow-duration="1.5s" data-wow-delay=".0s">ХІД БУДІВНИЦТВА</h2>
+                        <div class="section-text progress__text wow bounceInUp" data-wow-duration="1.5s" data-wow-delay=".0s">
+                            <p><strong>У Секції А</strong> підготовчі роботи під монтаж газових труб починаються роботи з внутрішнього оздоблення під'їздів завершення установки дверей.</p>
+                            <p><strong>У Секції Г</strong> завершуються підготовчі роботи під монтаж газових труб.</p>    
+                        </div>
+                        <a href="#" class="btn-home btn-main wow bounceInUp" data-wow-duration="1.5s" data-wow-delay=".0s">Весь період</a>
+                    </div>
+                    <div class="progress-slider progress-col">
+                        <div class="progress-slide">
+                            <img src="img/progress-slide-1.jpg" alt="ХІД БУДІВНИЦТВА">
+                        </div>
+                        <div class="progress-slide">
+                            <img src="img/progress-slide-1.jpg" alt="ХІД БУДІВНИЦТВА">
+                        </div>
+                        <div class="progress-slide">
+                            <img src="img/progress-slide-1.jpg" alt="ХІД БУДІВНИЦТВА">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /.progress -->
+        <section class="offers">
+            <div class="container">
+                <div class="offers-wrap">
+                    <div class="offers-slider offers-col" data-aos="zoom-in">
+                        <div id="offers-slider" class="offers-slide">
+                            <div class="offer__row">
+                                <div class="offer__img">
+                                    <img src="img/offers-slide-1.jpg" alt="ХІД БУДІВНИЦТВА">
+                                </div>
+                                <div class="offers-content offers-col">
+                                    <h2 class="section-title offers__title wow bounceInRight" data-wow-duration="1.5s" data-wow-delay=".0s">АКЦІЙНІ ПРОПОЗИЦІЇ</h2>
+                                    <div class="section-text offers__text wow bounceInRight" data-wow-duration="1.5s" data-wow-delay=".0s">
+                                        <p>Ідеальне рішення для вашого автомобіля –  власне паркомісце у підземному паркінгу. 
+                                            Вже буде непотрібно взимку періодично прогрівати автомобіль або чистити його від снігу кожного ранку.</p>
+                                        <p>Ціна зі знижкою 50% - від 123 280 грн<br>
+                                            Акція діє з 1 жовтня 2021 року по 31 жовтня 2021 року<br>
+                                            Знижка актуальна при 100% оплаті<br>
+                                            Кількість паркомісць обмежена!</p>
+                                    </div>
+                                    <a href="#" class="btn-home btn-main wow bounceInRight" data-wow-duration="1.5s" data-wow-delay=".0s">Докладніше</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="offers-slide">
+                            <div class="offer__row">
+                                <div class="offer__img">
+                                    <img src="img/offers-slide-1.jpg" alt="ХІД БУДІВНИЦТВА">
+                                </div>
+                                <div class="offers-content offers-col">
+                                    <h2 class="section-title offers__title wow bounceInRight" data-wow-duration="1.5s" data-wow-delay=".0s">АКЦІЙНІ ПРОПОЗИЦІЇ</h2>
+                                    <div class="section-text offers__text wow bounceInRight" data-wow-duration="1.5s" data-wow-delay=".0s">
+                                        <p>Ідеальне рішення для вашого автомобіля –  власне паркомісце у підземному паркінгу. 
+                                            Вже буде непотрібно взимку періодично прогрівати автомобіль або чистити його від снігу кожного ранку.</p>
+                                        <p>Ціна зі знижкою 50% - від 123 280 грн<br>
+                                            Акція діє з 1 жовтня 2021 року по 31 жовтня 2021 року<br>
+                                            Знижка актуальна при 100% оплаті<br>
+                                            Кількість паркомісць обмежена!</p>
+                                    </div>
+                                    <a href="#" class="btn-home btn-main wow bounceInRight" data-wow-duration="1.5s" data-wow-delay=".0s">Докладніше</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="offers-slide">
+                            <div class="offer__row">
+                                <div class="offer__img">
+                                    <img src="img/offers-slide-1.jpg" alt="ХІД БУДІВНИЦТВА">
+                                </div>
+                                <div class="offers-content offers-col">
+                                    <h2 class="section-title offers__title wow bounceInRight" data-wow-duration="1.5s" data-wow-delay=".0s">АКЦІЙНІ ПРОПОЗИЦІЇ</h2>
+                                    <div class="section-text offers__text wow bounceInRight" data-wow-duration="1.5s" data-wow-delay=".0s">
+                                        <p>Ідеальне рішення для вашого автомобіля –  власне паркомісце у підземному паркінгу. 
+                                            Вже буде непотрібно взимку періодично прогрівати автомобіль або чистити його від снігу кожного ранку.</p>
+                                        <p>Ціна зі знижкою 50% - від 123 280 грн<br>
+                                            Акція діє з 1 жовтня 2021 року по 31 жовтня 2021 року<br>
+                                            Знижка актуальна при 100% оплаті<br>
+                                            Кількість паркомісць обмежена!</p>
+                                    </div>
+                                    <a href="#" class="btn-home btn-main wow bounceInRight" data-wow-duration="1.5s" data-wow-delay=".0s">Докладніше</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /.offers -->
+        <section class="contractor">
+            <div class="container">
+                <div class="contractor-wrap">
+                    <div class="contractor-text">
+                        <h4 class="contractor__title wow bounceInUp" data-wow-duration="1.5s" data-wow-delay="0s">Будівельна компанія “Ібіс” є генеральним підрядником таких об’єктів в Ірпені:</h4>
+                    </div>
+                    <div class="contractor-slider wow bounceInRight" data-wow-duration="1.5s" data-wow-delay=".2s">
+                        <div class="contractor-slide"><div class="overlay"></div><img src="img/contractor-1.jpg" alt="Слайд 1"><span class="contractor-slide__title">Площа Творчого духу</span></div>
+                        <div class="contractor-slide"><div class="overlay"></div><img src="img/contractor-2.jpg" alt="Слайд 2"><span class="contractor-slide__title">Центральна частина міста Ірпінь</span></div>
+                        <div class="contractor-slide"><div class="overlay"></div><img src="img/contractor-3.jpg" alt="Слайд 3"><span class="contractor-slide__title">Торгівельний центр «Містер корнер»</span></div>
+                        <div class="contractor-slide"><div class="overlay"></div><img src="img/contractor-1.jpg" alt="Слайд 1"><span class="contractor-slide__title">Площа Творчого духу</span></div>
+                        <div class="contractor-slide"><div class="overlay"></div><img src="img/contractor-2.jpg" alt="Слайд 2"><span class="contractor-slide__title">Центральна частина міста Ірпінь</span></div>
+                        <div class="contractor-slide"><div class="overlay"></div><img src="img/contractor-3.jpg" alt="Слайд 3"><span class="contractor-slide__title">Торгівельний центр «Містер корнер»</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /.contractor -->
+        <footer class="footer">
+            <div class="bg-img-footer">
+                
+            </div>
+            <div class="container">
+                <div class="footer-wrap">
+                    <div class="footer-inner mb130 jcc">
+                        <div class="footer__adrress-1 wow flipInX" data-wow-duration="1.5s" data-wow-delay=".0s">
+                            <span>Київ, ТЦ Лавіна 13 км.</span>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-inner mb330">
+                        <div class="footer__logo wow flipInX" data-wow-duration="1.5s" data-wow-delay=".0s">
+                            <img src="img/logo-footer.png" alt="Ібіс">
+                            <span>житловий комплекс</span>
+                        </div>
+                        <div class="footer__adrress-2 wow flipInX" data-wow-duration="1.5s" data-wow-delay=".0s">
+                            <span>Ірпінь, Вокзал - 4 км.</span>
+                        </div>
+                    </div>
+                        
+                    <div class="footer-inner">
+                        <div class="footer__adrress-3 wow flipInX" data-wow-duration="1.5s" data-wow-delay=".0s">
+                            <span>Альтернативна Школа "Освітня Платформа" - 900 м.</span>
+                        </div>
+                        <div class="footer__adrress-4 wow flipInX" data-wow-duration="1.5s" data-wow-delay=".0s">
+                            <span>Комплекс відпочинку Адмірал клуб - 500 м.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+    </main>
+
+    <!-- Модалбное окно -->
+    <div id="callModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="call-modal">
+                <span>Замовити дзвінок</span>
+                <form>
+                    <input type="text" placeholder="Iм'я">
+                    <input type="tel" placeholder="Ваш телефон">
+                    <input type="submit" value="Замовити">
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- /Модалбное окно -->
+    <!-- Презагрузка -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <!-- /Презагрузка -->
+    <div style="display: none;" id="hidden-presentation">
+        <div class="modal-content">
+            <div class="call-modal">
+                <span>Замовити презендацію</span>
+                <form>
+                    <input type="text" placeholder="Iм'я">
+                    <input type="tel" placeholder="Ваш телефон">
+                    <input type="submit" value="Замовити">
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery библиотеки -->
+    <script src="js/libs.min.js"></script>
+    <script src="js/libs_pack/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        new WOW().init();
+    </script>
+    <script>
+        //// Анимация цыфр
+        var decimal_places = 2;
+        var decimal_factor = decimal_places === 0 ? 1 : Math.pow(10, decimal_places);
+        var show = true;
+        var countbox = ".works-list__item";
+        $(window).on("scroll load resize", function () {
+            if (!show) return false; // Отменяем показ анимации, если она уже была выполнена
+            var w_top = $(window).scrollTop(); // Количество пикселей на которое была прокручена страница
+            var e_top = $(countbox).offset().top; // Расстояние от блока со счетчиками до верха всего документа
+            var w_height = $(window).height(); // Высота окна браузера
+            var d_height = $(document).height(); // Высота всего документа
+            var e_height = $(countbox).outerHeight(); // Полная высота блока со счетчиками
+            
+            if (w_top + 500 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height) {
+                $('.works-list__item').css('opacity', 1);
+                $('#s1').animateNumber({
+                    number: 2.8 * decimal_factor,
+                    numberStep: function(now, tween) {
+                        var floored_number = Math.floor(now) / decimal_factor,
+                            target = $(tween.elem);
+                        if (decimal_places > 0) {
+                            floored_number = floored_number.toFixed(decimal_places);
+                            floored_number = floored_number.toString().replace('.', ',');
+                        }
+                        target.text(floored_number);}
+                },4000);
+            
+                $('#s2').prop('number', 0).animateNumber({number: 12},4000);
+                $('#s3').prop('number', 0).animateNumber({number: 500},4000);
+                $('#s4').prop('number', 0).animateNumber({number: 300},4000);
+                $('#s5').prop('number', 0).animateNumber({number: 3000},4000);
+                $('#s6').prop('number', 0).animateNumber({number: 800},4000);
+                
+                show = false;
+            }
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('.apartments-slider').owlCarousel({
+                loop:true,
+                margin:10,
+                nav: false,
+                responsiveClass:true,
+                navContainerClass: 'apartment-arrow',
+                navClass: ['apartment-arrow-prev', 'apartment-arrow-next'],
+                dots: true,
+                dotsClass: 'owl-dots',
+                dotClass: 'owl-dot',
+                responsive:{
+                    0:{
+                        items:1,
+                        nav: false,
+                    },
+                    650:{
+                        items:2,
+                        nav: false,
+                    },
+                    960:{
+                        nav: false,
+                        items:2,
+                    },
+                    1220:{
+                        items:3,
+                    },
+                    1366:{
+                        items:4,
+                        loop:false
+                    }
+                }
+            })
+        });
+        
+        $('.offers-slider').slick({
+            prevArrow: '<button class="gallery-arrow gallery-arrow-prev wow bounceInRight" data-wow-duration="1s" data-wow-delay="0s"></button>',
+            nextArrow: '<button class="gallery-arrow gallery-arrow-next wow bounceInLeft" data-wow-duration="1s" data-wow-delay="0s"></button>',
+            dots: false,
+            responsive: [
+                {
+                    breakpoint: 1025,
+                    settings: {
+                        centerPadding: '10px',
+                    }	
+                } 
+            ]
+        });
+        //  Set caption from card text
+        $('.info__play-video').fancybox();
+    </script>
+</body>
+</html>

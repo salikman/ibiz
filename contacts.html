@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти</title>
+
+    <!-- CSS стили -->
+    <link rel="stylesheet" href="css/libs.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <header class="header header-flat">
+        <!-- Навигация -->
+        <nav id="nav" class="navbar">
+            <div class="container">
+                <div class="navbar-wrap">
+                    <!-- Кнопки -->
+                    <div class="buttons">
+                        <div class="contacts">
+                            <input type="button" class="contacts__link">
+                            <ul class="contacts-wrap">
+                                <!-- Телефон -->
+                                <li class="phone elem">
+                                    <span class="circle"></span>
+                                    <span class="phone-switch switch">
+                                        <i class="fa fa-phone"></i>
+                                    </span>
+                                    <div class="elem-number">
+                                        <a href="tel:+380975357788" class="link">097-535-77-88</a>
+                                        <a id="callBtn" href="#" class="text">Получить предложение</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Язык -->
+                        <div class="lang">
+                            <div class="elem">
+                                <span class="circle"></span>
+                                <span class="lang-switch switch">
+                                    <span>RU</span>
+                                </span>
+                                <div class="elem-number lang-elem" >
+                                    <a href="/en" class="link">EN</a>
+                                    <a href="/ua" class="link">UA</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    <!-- Логотип -->
+                    <div class="brand">
+                        <a href="index.html">
+                            <img class="logo" src="img/logo.png" alt="logo">
+                            <img class="logo-mini" src="img/logo-mini.png" alt="logo">
+                        </a>
+                    </div>
+                    <!-- /Логотип -->
+                    <!-- Свертывания навигации -->
+                    <div class="navbar-collapse">
+                        <!-- <span class="one"></span> -->
+                        <span></span>
+                        <!-- <span class="three"></span> -->
+                    </div>
+                    <!-- /Свертывания навигации -->
+
+                    <!-- <div class="navbar-nav"> -->
+                    <ul class="main-nav">
+                        <li class="active"><a href="#">Про комплекс</a></li>
+                        <li><a href="#">Квартири</a></li>
+                        <li><a href="#">Планування</a></li>
+                        <li><a href="#">Акційні пропозиціЇ</a></li>
+                        <li><a href="#">Хід будівництва</a></li>
+                        <li><a href="#">Контакти</a></li>
+                    </ul>
+                    <!-- </div> -->
+                    <!-- /.navbar-nav -->
+                </div>
+            </div>
+        </nav>
+        <!-- /Навигация -->
+    </header>
+    <!-- /Шапка -->
+    <main class="contacts">
+        <div class="content">
+            <div class="container">
+                <div class="contacts__row">
+                    <div class="contacts-info">
+                        <div class="contacts__text">
+                            <h2 class="title">Адреса об’єкту:</h2>
+                            <p>м. Ірпінь, вул. Захисників та пров. Патріотів</p>
+                        </div>
+                        <div class="contacts__text">
+                            <h2 class="title">ВІДДІЛ ПРОДАЖУ:</h2>
+                            <p>+38 097 535 77 88</p>
+                            <p>м. Ірпінь, вул. Шевченка, 2а</p>
+                            <p>Email: sale@ibis-irpin.com.ua</p>
+                        </div>
+                        <div class="contacts__form">
+                            <h2 class="title">ЗВ’ЯЖІТЬСЯ З НАМИ:</h2>
+                            <form>
+                                <input type="text" name="name" value="" placeholder="Ваше Ім’я">
+                                <input type="tel" name="phone" value="" placeholder="+38 099 000 00 00">
+                                <input type="submit" value="Зателефонуйте мені">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="contacts-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d40645.73624317645!2d30.519750085504036!3d50.45304826546645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1588075329233!5m2!1sru!2sua" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer footer-contacts">
+        <div class="container">
+            <div class="footer__text">© Авторське право 2018 - 2020   |   Всі права захищені </div>
+        </div>
+    </footer>
+    <!-- Презагрузка -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <!-- /Презагрузка -->
+    <!-- Заказать звонок Модалбное окно -->
+    <div id="callModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="call-modal">
+                <span>Замовити дзвінок</span>
+                <form>
+                    <input type="text" placeholder="Iм'я">
+                    <input type="tel" placeholder="Ваш телефон">
+                    <input type="submit" value="Замовити">
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- /Заказать звонок Модалбное окно -->
+    <!-- jQuery библиотеки -->
+    <script src="js/libs.min.js"></script>
+
+    <script src="js/main.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+</html>
